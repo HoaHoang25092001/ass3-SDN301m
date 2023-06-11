@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <link
+      rel="stylesheet"
+      href="/stylesheets/detail_player.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title><%=title%></title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="back">
+        <a href="/" class="back_home">X</a>
+    </div>
+      <img
+        src="<%= player.image%>"
+        alt=""
+        class="box-img"
+      />
+      <h1><%= player.name%></h1>
+      <h2><%= player.club%></h2>
+      <h5>
+        Position: <%= player.position%>
+      </h5>
+      <h5>
+        Goals: <%= player.goals%>
+      </h5>
+      <h5>
+        Is Captain: <%=JSON.stringify(player.isCaptain)===JSON.stringify('Captain')? 'Yes'
+                                    :'No'%>
+      </h5>
+    </div>
+  </body>
+</html>

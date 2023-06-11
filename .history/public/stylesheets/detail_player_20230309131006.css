@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/333a6a17337187.562b8b8acb9b5.jpg) no-repeat;
+  background-size: cover;
+}
+
+.box {
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+  position: relative;
+  border-radius: 8px;
+}
+
+.box-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+
+.box h5 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.box p {
+  text-align: justify;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.box li {
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+
+.box li a {
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+
+.box li a:hover {
+  color: #b9b9b9;
+}
+
+.box .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: #f0ecec; */
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.box .back:hover {
+  background-color: #c0afaf;
+}
+
+.box .back a {
+  display: inline-block;
+  margin-top: 7px;
+}

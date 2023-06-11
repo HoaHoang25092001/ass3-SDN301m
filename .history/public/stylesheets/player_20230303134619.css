@@ -1,0 +1,145 @@
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand img {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.nav-link {
+    font-size: 1.25rem;
+}
+
+.nav-link.active {
+    text-decoration: 2px underline;
+    text-decoration-style: solid;
+    text-decoration-color: #198754;
+}
+
+.bg-img {
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-img.overlay::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container .row h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    position: relative;
+    margin-top: 10%;
+}
+
+.container .row {
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.container{
+    z-index: 1;
+    position: relative;
+}
+table{
+    left: 0;
+    margin-right: 200px;
+    margin-top: 30px;
+}
+table img{
+max-width: 64px;
+max-height: 128px;
+}
+table tbody{
+    color: white;
+}
+table thead{
+    color: white;
+}
+.box{
+    background-color: white;
+    padding: 30px;
+    margin-top: 50px;
+    border: 3px solid #198754;
+    border-radius: 20px;
+}
+.errMsg{
+    color: red;
+    z-index: 1;
+}
+.buttons{
+    z-index: 5;
+}
+.detail-btn:hover{
+    width: 100%;
+    background-color: #198754;
+    color: white;
+}
+.edit-btn:hover {
+    width: 100%;
+    background-color: #FFC107;
+    color: black;
+}
+.delete-btn:hover {
+    width: 100%;
+    background-color: #DC3545;
+    color: white;
+}
+
+.box-view{
+    background-color: white;
+    border: 2px solid #198754;
+    border-radius: 20px;
+    padding: 30px;
+    max-height: 500px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.box-view .img-detail{
+    max-width: 256px;
+    max-height: 256px;
+}
+.box-view .text{
+    font-size: 1.5rem;
+}
+.box-view .buttons{
+    float: right;
+}
+.modal-backdrop{
+    --bs-backdrop-zindex: unset !important;
+    --bs-backdrop-bg: unset !important;
+}
+.rounded.nation {
+    max-width: 128px;
+    max-height: 64px;
+}
+.alert {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 624px;
+    margin-right: 20px;
+}
+.back{
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-nation{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 10px;
+}

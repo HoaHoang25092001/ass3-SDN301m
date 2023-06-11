@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/stylesheets/player.css" type="text/css">
+    <title>
+        <%=title%>
+    </title>
+</head>
+
+<body>
+    <%- include('include/navbarPlayer.ejs')%>
+        <div class="bg-img overlay"
+            style="background-image: url('https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,h_630,f_auto,q_auto,g_auto/shape/cover/sport/fbl-wc-2022-qat-5d6ebdfb4cd5800da8000001.jpg');">
+            <div class="container">
+                <div class="back">
+                    <a href="/players" class="btn btn-success mt-2""><i class=" fa-solid fa-chevron-left"></i></a>
+                </div>
+                <div class="box-view">
+                    <div class="buttons">
+                        <div class="dropdown">
+                            <button class="btn btn-success" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-three-dots" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <a class="btn edit-btn" href="/players/edit/<%= player._id%>">Edit</a>
+                                </li>
+                                <li>
+                                    <a class="btn delete-btn" href="/players/delete/<%= player._id%>">Delete</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img class="img-detail rounded" src="<%= player.image%>" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="text">
+                                Name: <%= player.name%>
+                            </p>
+                            <p class="text">
+                                Club: <%= player.club%>
+                            </p>
+                            <p class="text">
+                                Position: <%= player.position%>
+                            </p>
+                            <p class="text">
+                                Goals: <%= player.goals%>
+                            </p>
+                            <p class="text">
+                                Is Captain: <%=JSON.stringify(player.isCaptain)===JSON.stringify('Captain')? 'Yes'
+                                    :'No'%>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+nav{
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand img{
+    max-width: 32px;
+    max-height: 32px;
+}
+.nav-link{
+    font-size: 1.25rem;
+}
+.nav-link.active{
+    text-decoration: 2px underline;
+        text-decoration-style: solid;
+        text-decoration-color: #198754;
+}
+.bg-img {
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center center;
+}
+.bg-img.overlay::before{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.container .row h1{
+    font-weight: 700;
+    font-size: 4rem;
+    position: relative;
+    margin-top: 10%;
+}
+.container .row{
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.alert-group {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 624px;
+    margin-right: 20px;
+}
